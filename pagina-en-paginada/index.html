@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101522">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="calculator-page">
+    <main class="calculator">
+        <header class="calculator__header">
+            <p class="calculator__eyebrow">CÁLCULO SIMPLE</p>
+            <h1>Calculadora</h1>
+            <p class="calculator__subtitle">Una herramienta para tus cuentas diarias.</p>
+        </header>
+
+        <section class="calculator__panel" aria-label="Calculadora básica">
+            <div class="calculator__screen" aria-label="Pantalla de la calculadora">
+                <p class="calculator__expression" id="expression" aria-hidden="true"></p>
+                <output class="calculator__display" id="display" aria-live="polite" aria-atomic="true">0</output>
+            </div>
+
+            <div class="calculator__keys" aria-label="Teclado de la calculadora">
+                <button class="calculator__key calculator__key--clear" type="button" data-action="clear" aria-label="Borrar todo">C</button>
+                <button class="calculator__key calculator__key--operator" type="button" data-operator="/" aria-label="Dividir">÷</button>
+                <button class="calculator__key calculator__key--operator" type="button" data-operator="*" aria-label="Multiplicar">×</button>
+                <button class="calculator__key calculator__key--operator" type="button" data-operator="-" aria-label="Restar">−</button>
+
+                <button class="calculator__key" type="button" data-number="7">7</button>
+                <button class="calculator__key" type="button" data-number="8">8</button>
+                <button class="calculator__key" type="button" data-number="9">9</button>
+                <button class="calculator__key calculator__key--operator" type="button" data-operator="+" aria-label="Sumar">+</button>
+
+                <button class="calculator__key" type="button" data-number="4">4</button>
+                <button class="calculator__key" type="button" data-number="5">5</button>
+                <button class="calculator__key" type="button" data-number="6">6</button>
+                <button class="calculator__key calculator__key--equals" type="button" data-action="equals" aria-label="Obtener resultado">=</button>
+
+                <button class="calculator__key" type="button" data-number="1">1</button>
+                <button class="calculator__key" type="button" data-number="2">2</button>
+                <button class="calculator__key" type="button" data-number="3">3</button>
+                <button class="calculator__key calculator__key--zero" type="button" data-number="0">0</button>
+                <button class="calculator__key" type="button" data-action="decimal" aria-label="Punto decimal">.</button>
+            </div>
+        </section>
+
+        <p class="calculator__hint">También puedes usar el teclado: números, +, −, ×, ÷ y Enter.</p>
+    </main>
+    <script src="assets/calculator.js" defer></script>
+</body>
+</html>
